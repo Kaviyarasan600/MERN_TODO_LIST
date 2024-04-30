@@ -1,0 +1,77 @@
+.animated_box{
+    height: 3em;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.triangle_marks{
+    font-size: 3em;
+    position: absolute;
+    animation: color 5000ms infinite;
+    color: red;
+}
+.exclamation_marks{
+    font-size: 1.6em;
+    /* color: red; */
+    animation: shack 1500ms infinite;
+}
+
+
+
+@keyframes color {
+    0%{
+        opacity: 1;
+        font-size: 3em;
+    }
+    25%{
+        opacity: 0.6;
+        font-size: 2em;
+        transform: rotateY(-150deg);
+    }
+    50%{
+        opacity: 0.6;
+        font-size: 2em;
+        transform: rotateY(150deg);
+    }
+    100%{
+        opacity: 1;
+        font-size: 3em;
+    }
+}
+
+@keyframes shack {
+    0%{
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(10deg);
+    }
+    20%{
+        transform: rotate(-10deg);
+    }
+    30%{
+        transform: rotate(10deg);
+    }
+    40%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    60%{
+        transform: rotate(-10deg);
+    }
+    70%{
+        transform: rotate(10deg);
+    }
+    80%{
+        transform: rotate(-10deg);
+    }
+    90%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
