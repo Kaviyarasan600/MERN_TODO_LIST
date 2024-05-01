@@ -15,7 +15,7 @@ function HomePage() {
     const getPost = async()=>{
         try {
             setIsLoading(true)
-            const response = await fetch("http://localhost:5000/post/posts")
+            const response = await fetch("https://mern-todo-list-a6up.onrender.com/post/posts")
             const data = await response.json()
             if(response.ok){
                 setEventData(data)
@@ -28,7 +28,7 @@ function HomePage() {
 
     const DeletePost = async(id)=>{
         try {
-            const response = await fetch(`http://localhost:5000/post/delete/${id}`,{
+            const response = await fetch(`https://mern-todo-list-a6up.onrender.com/post/delete/${id}`,{
                 method: "DELETE"
             })
             if(response.ok){

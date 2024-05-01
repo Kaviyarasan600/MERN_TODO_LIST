@@ -41,10 +41,10 @@ export const TodoList = (props) => {
                         </Card.Text>
                 </Card.Body>
                 <Container fluid className="bg-primary-subtle p-1 mb-1">
-                    <Row xs= {3} className="text text-center">
-                            <Col>
+                    <Row xs= {2} className="text text-center">
+                            {/* <Col>
                                 <FaRegHeart className="text text-center align-self-center" role="button" />
-                            </Col>
+                            </Col> */}
                             <Link  className="align-self-center" to={`/update/${_id}`}>
                                 <AiFillEdit role="button" className="text-dark-emphasis"/>
                             </Link>

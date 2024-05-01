@@ -14,7 +14,7 @@ function UpdatePost() {
 
     const singlePost = async()=>{
         try {
-            const response = await fetch(`http://localhost:5000/post/event/${postid}`)
+            const response = await fetch(`https://mern-todo-list-a6up.onrender.com/post/event/${postid}`)
             const data = await response.json()
             const {title,event} = data
             setTitle(title)
@@ -28,7 +28,7 @@ function UpdatePost() {
         e.preventDefault()
         try {
             setLoading(true)
-            const response = await fetch(`http://localhost:5000/post/update/${postid}`,{
+            const response = await fetch(`https://mern-todo-list-a6up.onrender.com/post/update/${postid}`,{
                 method: "PUT",
                 headers:{
                     "Content-Type" : "application/json"

@@ -28,7 +28,7 @@ function CreatePost() {
         }
         try {
             setLoading(true)
-            const response = await fetch("http://localhost:5000/post/create",{
+            const response = await fetch("https://mern-todo-list-a6up.onrender.com/post/create",{
                 method : "POST",
                 headers :{
                     "Content-Type" : "application/json" 
